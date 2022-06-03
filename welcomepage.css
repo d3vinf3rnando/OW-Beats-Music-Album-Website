@@ -1,0 +1,81 @@
+/*Welcome page css*/
+#head1{
+    font-size:42px;
+    position:absolute;
+    top: -10px;
+    left: 610px;
+  }
+  
+  #team-members{
+    font-size:18px;
+    color:#FFB245;
+    position: absolute;
+    top: 80px;
+    left: 620px;
+  }
+  
+  #mask{
+    width:30%;
+    position: absolute;
+    top: 270px;
+  }
+  
+  #dil-pic{
+    width:20%;
+  
+    position: absolute;
+    top: 190px;
+    left:60px;
+  }
+  
+  #devin-pic{
+    width:20%;
+  
+    position: absolute;
+    top: 190px;
+    left:390px;
+  }
+  
+  #chenuki-pic{
+    width:20%;
+  
+    position: absolute;
+    top: 190px;
+    left:720px;
+  }
+  
+  #reshma-pic{
+    width:20%;
+  
+    position: absolute;
+    top: 190px;
+    left:1050px;
+  }
+  
+  #name1{
+    
+    position: absolute;
+    top: 490px;
+    left:130px;
+  }
+  
+  #name2{
+    
+    position: absolute;
+    top: 490px;
+    left:475px;
+  }
+  
+  #name3{
+    
+    position: absolute;
+    top: 490px;
+    left:780px;
+  }
+  
+  #name4{
+    
+    position: absolute;
+    top: 490px;
+    left:1100px;
+  }

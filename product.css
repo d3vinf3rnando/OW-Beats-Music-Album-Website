@@ -1,0 +1,646 @@
+body {
+  background-color: #fdf6ec;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  background-color: #fdf6ec;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #362222;
+}
+.navbar ul {
+  margin: 0;
+}
+
+.navlinks {
+  display: inline;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 7fr 5fr;
+}
+.logo {
+  width: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+
+  
+}
+
+.middleNav {
+  margin-top: 20px;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.btn-Nav {
+  background-color: #ffb72b;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 12px;
+  /* border-radius: 20px; */
+  border: none;
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+.btn-Nav:hover {
+  background-color: #a13333;
+  color: #ffffff;
+}
+
+/*contents of product page */
+#line-1{
+  width: 20px;
+  position: absolute;
+  top: 100px;
+  
+}
+
+#line-black{
+  width: 1350px;
+}
+
+#searchBar{
+  position: absolute;
+  right:60px;
+  top: 300px;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  box-shadow: 5px 4px 40px -9px rgba(0, 0, 0, 0.41);
+}
+
+#icon-search{
+  background-color: #FFB245;
+  border: none;
+  color: white;
+  padding-left:5px;
+  padding-right: 5px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  box-shadow: 5px 4px 40px -9px rgba(0, 0, 0, 0.41);
+
+  position: absolute;
+  right: 48px;
+  top:308px;
+
+}
+
+#main-search-bar{
+  position: absolute;
+  right: 56px;
+  top: -120px;
+  
+}
+
+/* selection product category */
+.hoverimg:hover{
+  opacity: 0.8;
+
+}
+#countrySongs{
+  width:550px;
+
+  position: absolute;
+  top: 290px;
+  left: 60px;
+}
+
+#edmSongs{
+  width:130px;
+
+  position: absolute;
+  top: 290px;
+  left: 640px;
+}
+
+#popSongs{
+  width:130px;
+
+  position: absolute;
+  top: 290px;
+  left: 790px;
+}
+
+#rapSongs{
+  width:130px;
+
+  position: absolute;
+  top: 290px;
+  left:940px;
+}
+
+#bassSongs{
+  width:130px;
+
+  position: absolute;
+  top: 290px;
+  left:1090px;
+}
+
+#hiphopSongs{
+  width:130px;
+
+  position: absolute;
+  top: 420px;
+  left:640px;
+}
+
+#jazzSongs{
+  width:130px;
+
+  position: absolute;
+  top: 420px;
+  left:790px;
+}
+
+#funkSongs{
+  width:130px;
+
+  position: absolute;
+  top: 420px;
+  left:940px;
+}
+
+#reggaeSongs{
+  width:130px;
+
+  position: absolute;
+  top: 420px;
+  left:1090px;
+}
+
+#ambientSongs{
+  width:130px;
+
+  position: absolute;
+  top: 550px;
+  left:640px;
+}
+
+#djSongs{
+  width:130px;
+
+  position: absolute;
+  top: 550px;
+  left:790px;
+}
+
+#remixSongs{
+  width:130px;
+
+  position: absolute;
+  top: 550px;
+  left:940px;
+}
+
+#allSongs{
+  width:130px;
+
+  position: absolute;
+  top: 550px;
+  left:1090px;
+}
+
+#c-songs-3{
+  font-size:20px;
+  font-weight: bold;
+
+  position: absolute;
+  top: 750px;
+  left: 60px;
+}
+
+#thomas-img{
+  width:400px;
+
+  position: absolute;
+  top: 860px;
+  left: 60px;
+}
+
+#george-img{
+  width:400px;
+
+  position: absolute;
+  top: 860px;
+  left: 460px;
+}
+
+#meghan-img{
+  width:400px;
+
+  position: absolute;
+  top: 860px;
+  left: 860px;
+}
+
+
+.music-hover{
+  transition: 1s;
+}
+
+.music-hover:hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+/*album 1 page css*/
+
+#album1{
+  width: 400px;
+
+  position: absolute;
+  top: 230px;
+  left: 60px;
+}
+
+#album1-topic{
+
+  position: absolute;
+  top: 200px;
+  left: 550px;
+}
+
+#album1-price{
+  font-size:22px;
+  font-weight:100;
+
+  position: absolute;
+  top: 1400px;
+  left: 205px;
+}
+
+#album1-detail-topic{
+font-weight: 100;
+color: rgb(0, 0, 0);
+
+  position: absolute;
+  top:370px ;
+  left: 550px;
+}
+
+#album1-para{
+  font-size: 18px;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.568);
+
+  position: absolute;
+  top: 420px;
+  left: 550px;
+}
+
+.card{
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100%;
+  padding:100px;
+
+  position:absolute;
+  top: 1050px;
+  left: 80px;
+}
+
+#root{
+  color: black;
+  margin:0 30px;
+  font-size:18px;
+}
+
+.add-button{
+  width: 30px;
+  height:30px;
+  outline: none;
+  border-style: none;
+  font-size:20px;
+  background-color:#FFB72B;
+
+}
+
+.add-button:hover{
+  background-color:rgba(0, 0, 0, 0.589);
+  color: white;
+}
+
+#album2-price{
+  font-size:22px;
+  font-weight:100;
+
+  position: absolute;
+  top: 1400px;
+  left: 620px;
+}
+
+.card2{
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100%;
+  padding:100px;
+
+  position:absolute;
+  top: 1050px;
+  left: 490px;}
+
+  #root2{
+    color: black;
+    margin:0 30px;
+    font-size:18px;
+  }
+
+
+  #album3-price{
+    font-size:22px;
+    font-weight:100;
+  
+    position: absolute;
+    top: 1400px;
+    left: 1020px;
+  }
+
+  .card3{
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    padding:100px;
+  
+    position:absolute;
+    top: 1050px;
+    left: 895px;}
+
+    #root3{
+      color: black;
+      margin:0 30px;
+      font-size:18px;
+    }
+
+    #buynow1{
+      background-color:#FFB72B;
+      color:white;
+      width: 260px;
+      height:40px;
+      border-radius:20px;
+      border: none;
+      font-weight:800;
+
+      position: absolute;
+      top: 1550px;
+      left: 110px;
+
+    }
+
+    #buynow1:hover{
+      background-color:white;
+      color:#ffb72b;
+      border: 1px solid;
+    }
+
+    #addtocart1{
+      background-color:#000000;
+      color:white;
+      width: 260px;
+      height:40px;
+      border-radius:20px;
+      border: none;
+      font-weight:800;
+
+      position: absolute;
+      top: 1150px;
+      left: 110px;
+
+      position: absolute;
+      top: 1550px;
+      left: 110px;
+
+    }
+
+    #addtocart1:hover{
+      background-color:#ffb82b;
+      color:#000000;
+      
+      border: none;
+    }
+
+    #buynow2{
+      background-color:#FFB72B;
+      width: 260px;
+      height:40px;
+      border-radius:20px;
+      border: none;
+      font-weight:800;
+      color:white;
+
+      position: absolute;
+      top: 1550px;
+      left: 530px;
+
+    }
+
+    #buynow2:hover{
+      background-color:#ffb82b;
+      color:white;
+      border: 1px solid;
+    }
+
+    #addtocart2{
+      background-color:#000000;
+      color:white;
+      width: 260px;
+      height:40px;
+      border-radius:20px;
+      border: none;
+      font-weight:800;
+
+      position: absolute;
+      top: 1550px;
+      left: 530px;
+
+    }
+
+    #addtocart2:hover{
+      background-color:#ffb82b;
+      color:#000000;
+      
+      border: none;
+    }
+
+
+    #buynow3{
+      background-color:#FFB72B;
+      width: 260px;
+      height:40px;
+      border-radius:20px;
+      border: none;
+      font-weight:800;
+      color:white;
+
+      position: absolute;
+      top: 1550px;
+      left: 930px;
+
+    }
+
+    #buynow3:hover{
+      background-color:white;
+      color:#ffb82b;
+      border: 1px solid;
+    }
+
+    #addtocart3{
+      background-color:#000000;
+      color:white;
+      width: 260px;
+      height:40px;
+      border-radius:20px;
+      border: none;
+      font-weight:800;
+
+      position: absolute;
+      top: 1550px;
+      left: 930px;
+
+    }
+
+    #addtocart3:hover{
+      background-color:#ffb82b;
+      color:#000000;
+      
+      border: none;
+    }
+
+    .cart{
+      width: 100%;
+      position: absolute;
+      top: 1750px;
+      text-align: center;
+      border: 1px solid black;
+     overflow-y: scroll;
+     height: 400px; 
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .prices{
+      font-size: 38px;
+    }
+  
+  form ul{
+    list-style-type: none;
+    
+  }
+  form label{
+    margin-right: 20px;
+  }
+  form li{
+    margin-bottom: 20px;
+  }
+
+form button{
+  margin-left: 20px;
+}
+.invoice{
+  margin-left: 50px;
+  display: none;
+}
+
+
+
+
+
+
+
+.footer-distributed {
+  position: absolute;
+  top: 2000px;
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}

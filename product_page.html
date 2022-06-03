@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="product.css" />
+
+    <script
+      src="https://kit.fontawesome.com/b6273fb2d3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Music Store</title>
+  </head>
+  <body>
+    
+      <div class="gridContainer">
+        <a href="homepage.html"
+          ><div class="leftNav">
+            <img src="assets/logo.png" alt="" class="logo" /></div
+        ></a>
+        <div class="middleNav">
+          <ul>
+            <a href="homepage.html"><li class="navlinks">Home</li></a>
+            <a href="chart.html"><li class="navlinks">Top Charts</li></a>
+            <a href="thumbnail.html"><li class="navlinks">Gallery</li></a>
+            <a href="product_page.html"><li class="navlinks">Purchase</li></a>
+          </ul>
+        </div>
+        <div style="text-align: right; margin-right: 100px">
+          <a href="Queryform.html"><button class="btn-Nav">Query</button></a>
+          <a href="quiz.html"><button class="btn-Nav">Take Quiz</button></a>
+        </div>
+      </div>
+
+    <!--contents of produc page-->
+
+    <!--line-->
+    <div id="line-1">
+      <img id="line-black" src="Images/Line 5.png" alt="line-black" />
+    </div>
+
+    <div class="invoice">
+      <h1>Invoice</h1>
+    <p class="invoiceName"></p>
+    <p class="invoiceMail"></p>
+    <h2>Product Details</h2>
+    <div class="productDetails">
+      
+    </div>
+    <h2 class="totalPrice"></h2>
+  </div>
+    <div class="allProducts">
+      <!-- invoice -->
+     
+      
+    <!--search bar -->
+
+    <div id="main-search-bar">
+      <div>
+        <label for="searchBar"></label>
+        <input type="text" placeholder="Search here..." id="searchBar" />
+        <button id="icon-search" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <!--search bar icon -->
+
+    <!--selection product category  -->
+
+    <div id="categories">
+      <img
+        id="countrySongs"
+        class="hoverimg"
+        src="Images/countrysongs.png"
+        alt="country-songs.png"
+      />
+      <img id="edmSongs" class="hoverimg" src="Images/edm.png" alt="ednm.png" />
+      <img id="popSongs" class="hoverimg" src="Images/pop.png" alt="popsongs" />
+      <img
+        id="rapSongs"
+        class="hoverimg"
+        src="Images/rap.png"
+        alt="rap songs"
+      />
+      <img
+        id="bassSongs"
+        class="hoverimg"
+        src="Images/bass.png"
+        alt="bass songs"
+      />
+      <img
+        id="hiphopSongs"
+        class="hoverimg"
+        src="Images/hiphop.png"
+        alt="hiphop songs "
+      />
+      <img
+        id="jazzSongs"
+        class="hoverimg"
+        src="Images/jazz.png"
+        alt="jazz songs"
+      />
+      <img
+        id="funkSongs"
+        class="hoverimg"
+        src="Images/funk.png"
+        alt="funk songs"
+      />
+      <img
+        id="reggaeSongs"
+        class="hoverimg"
+        src="Images/reggae.png"
+        alt="reggae songs"
+      />
+      <img
+        id="ambientSongs"
+        class="hoverimg"
+        src="Images/ambient.png"
+        alt="ambient songs"
+      />
+      <img id="djSongs" class="hoverimg" src="Images/dj.png" alt="dj songs" />
+      <img
+        id="remixSongs"
+        class="hoverimg"
+        src="Images/remix.png"
+        alt="remix songs"
+      />
+      <img
+        id="allSongs"
+        class="hoverimg"
+        src="Images/all.png"
+        alt="all songs"
+      />
+    </div>
+
+    <!--products-->
+
+    <p id="c-songs-3">COUNTRY SONGS (3)</p>
+
+    <div class="c-songs-products">
+      <div class="1" id="song1">
+        <a id="thomas-link" href="Album1_product.html">
+          <img
+            id="thomas-img"
+            class="music-hover"
+            src="Images/thomastext.png"
+            alt=""
+          />
+        </a>
+        <p id="album1-price">$100.00</p>
+
+        <div class="card">
+          <button class="add-button" onclick="decrement()">-</button>
+          <h2 id="root"></h2>
+          <button class="add-button" onclick="increment()">+</button>
+        </div>
+
+        <button id="addtocart1" class="buynow-button">Add to Cart 🛒</button>
+      </div>
+
+      <div class="2">
+        <a id="george-link" href="https://sunviewholidayhomebandarawela.com">
+          <img
+            id="george-img"
+            class="music-hover"
+            src="Images/holdmyown.png"
+            alt=""
+          />
+        </a>
+
+        <p id="album2-price">$120.00</p>
+
+        <div class="card2">
+          <button class="add-button" onclick="decrement2()">-</button>
+          <h2 id="root2"></h2>
+          <button class="add-button" onclick="increment2()">+</button>
+        </div>
+
+        <button id="addtocart2" class="buynow-button">Add to Cart 🛒</button>
+      </div>
+
+      <div class="3">
+        <a id="meghan-link" href="https://sunviewholidayhomebandarawela.com">
+          <img
+            id="meghan-img"
+            class="music-hover"
+            src="Images/meghan.png"
+            alt=""
+          />
+        </a>
+
+        <p id="album3-price">$110.00</p>
+
+        <div class="card3">
+          <button class="add-button" onclick="decrement3()">-</button>
+          <h2 id="root3"></h2>
+          <button class="add-button" onclick="increment3()">+</button>
+        </div>
+
+        <button id="addtocart3" class="buynow-button">Add to Cart 🛒</button>
+      </div>
+
+      <div class="cart" id="cart">
+        <div class="tittle">
+          <h3>Cart</h3>
+          <p class="item1"></p>
+          <p class="item2"></p>
+          <p class="item3"></p>
+        </div>
+        <div>
+          <h1>Bill</h1>
+          <p class="prices">$0</p>
+        </div>
+        <div>
+          <form action="">
+            <ul>
+              <li><label for="name">Name</label><input type="text" name="name" id="name"></li>
+              <li><label for="email">Email</label><input type="text" name="email" id="email"></li>
+            </ul>
+            <button id="place" type="button">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="cartview"></div>
+
+    <div class="footer-product-page">
+      <footer class="footer-distributed">
+        <div class="footer-right">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+  
+        <div class="footer-left">
+          <p class="footer-links">
+            <a class="link-1" href="homepage.html">Home</a>
+  
+            <a href="chart.html">Top Charts</a>
+  
+            <a href="studentDetails.html">Meet our Team</a>
+  
+            <a href="product_page.html">Purchase</a>
+  
+            <a href="Queryform.html">Query</a>
+  
+            <a href="quiz.html">Take Quiz</a>
+          </p>
+  
+          <p>OW Beats &copy; 2022</p>
+        </div>
+      </footer>
+    <script src="product.js"></script>
+  </body>
+</html>

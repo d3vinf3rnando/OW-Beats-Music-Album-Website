@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="quiz.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/fav logo.png" />
+    <!-- font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <title>Quick Quiz</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="gridContainer">
+        <a href="homepage.html"
+          ><div class="leftNav">
+            <img src="/assets/logo.png" alt="" class="logo" /></div
+        ></a>
+        <div class="middleNav">
+          <ul>
+            <a href="homepage.html"><li class="navlinks">Home</li></a>
+            <a href="chart.html"><li class="navlinks">Top Charts</li></a>
+            <a href="studentDetails.html"><li class="navlinks">Meet our Team</li></a>
+            <a href="product_page.html"><li class="navlinks">Purchase</li></a>
+          </ul>
+        </div>
+        <div style="text-align: right; margin-right: 100px">
+          <a href="Queryform.html"><button class="btn-Nav">Query</button></a>
+          <a href="quiz.html"><button class="btn-Nav">Take Quiz</button></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hidden buttons -->
+    <div class="btnClass">
+      <a href="" id="retake" onclick=""
+        ><button id="retakeBTN">Retake the Quiz</button></a
+      >
+      <a href="homepage.html" id="quit"><button id="quitBTN">Quit</button></a>
+    </div>
+    <!-- QUIZ -->
+    <h1 class="quizheader" id="quizheader">Todays Quiz</h1>
+    <h4 class="timer" id="timer">Starting Timer...</h4>
+    <div class="startDiv">
+      <button type="button" id="startQuiz" onclick="startFunc()">
+        Start the Quiz
+      </button>
+    </div>
+    <!-- Question box -->
+    <div class="form" id="form">
+      <form name="quizform" id="quizform">
+        <div class="quizbank">
+          
+          <div class="questions">
+            <p class="questionBox">
+              What is the most viewed YouTube video all time?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q1" value="wrong" />Baby - Justin
+              Bieber</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q1" value="wrong" />See you again - Wiz
+              Khalifa ft Chalie Puth</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q1" value="baby" />Baby Shark Dance -
+              PINKFONG</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q1" value="wrong" />GANGAM STYLE -
+              PSY</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              Which rapper has won most number of Grammys?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q2" value="wrong" />Eminem</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q2" value="JayZ" />Jay-Z</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q2" value="wrong" />Lil Wayne</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q2" value="wrong" />Snoop Dog</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              Which one of this is a Music Production Software For Audio
+              Professionals?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q3" value="logic" />Logic Pro X</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q3" value="wrong" />Ableton Live
+              10.</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q3" value="wrong" />Moho Pro</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q3" value="wrong" />Adobe Premier
+              Pro</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">What does music sampling means?</p>
+            <label class="answerbox"
+              ><input type="radio" name="q4" value="wrong" /> Process of
+              blending individual things in a recording to come up with the best
+              version of a song</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q4" value="wrong" />Creating music with
+              live instrument recordings</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q4" value="sampling" />In music,
+              sampling is the reuse of a portion of a sound recording in another
+              recording</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q4" value="wrong" />The process of
+              putting the finishing touches on a song by enhancing the overall
+              sound</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              What is the most sold Physical Album all time?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q5" value="wrong" /> 21 - Adele</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q5" value="thriller" />Thriller -
+              Michael Jackson</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q5" value="wrong" />A Rush of Blood to
+              the Head - Coldplay</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q5" value="wrong" />The Fame - Lady
+              Gaga</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">Which one of this is a musical movie?</p>
+            <label class="answerbox"
+              ><input type="radio" name="q6" value="wrong" /> Inception
+              (2010)</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q6" value="wrong" />The Prestige
+              (2015)</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q6" value="la la  land" />La La Land
+              (2016)</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q6" value="wrong" />The Dark Knight
+              Rises (2012)</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              Who's the most streamed artist on Spotify all time?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q7" value="Drake" />Drake</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q7" value="wrong" />Bad Bunny</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q7" value="wrong" />Justin
+              Bieber</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q7" value="wrong" />Ariana
+              Grande</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              Which one of this instrument is not a string instrument?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q8" value="bongo" />Bongo</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q8" value="wrong" />Banjo</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q8" value="wrong" />Violin</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q8" value="wrong" />Guitar</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              Which artist has highest instagram followers?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q9" value="wrong" />Justin
+              Bieber</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q9" value="wrong" />Drake</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q9" value="wrong" />Demi Loveto</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q9" value="ariana" />Ariana
+              Grande</label
+            >
+          </div>
+
+          <div class="questions">
+            <p class="questionBox">
+              Which song reached 1 billion in the shortest time?
+            </p>
+            <label class="answerbox"
+              ><input type="radio" name="q10" value="wrong" />See you again -
+              Wiz Khalifa ft Chalie Puth</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q10" value="wrong" />GANGAM STYLE -
+              PSY</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q10" value="wrong" />Hello -
+              Adele</label
+            >
+            <label class="answerbox"
+              ><input type="radio" name="q10" value="despacito" />Despacito -
+              Luis Fonsi ft. Daddy Yankee</label
+            >
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <input
+          class="formSubmit"
+          type="button"
+          value="Submit"
+          onclick="evaluateQuestion()"
+        />
+      </form>
+    </div>
+    <!-- hidden marks display -->
+    <div class="marks" id="marks">
+      <p id="markspara"></p>
+    </div>
+    <div id="correctionList"></div>
+
+    <!-- Footer  -->
+
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="/homepage.html">Home</a>
+
+          <a href="/chart.html">Top Charts</a>
+
+          <a href="/studentDetails.html">Meet our Team</a>
+
+          <a href="product_page.html">Purchase</a>
+
+          <a href="/Queryform.html">Query</a>
+
+          <a href="/quiz.html">Take Quiz</a>
+        </p>
+        <a href="/sitemap.html" class="sitemap"
+          ><button class="leftBTN">Site Map</button></a
+        >
+        <a href="/editorPages/student3.html" class="editor"
+          ><button class="leftBTN">Page editor</button></a
+        >
+
+        <p class="copyright">OW Beats &copy; 2022</p>
+      </div>
+    </footer>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

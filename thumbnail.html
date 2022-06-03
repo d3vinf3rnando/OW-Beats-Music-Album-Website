@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/fav logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="thumbnail.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="gridContainer">
+        <a href="homepage.html"
+          ><div class="leftNav">
+            <img src="/assets/logo.png" alt="" class="logo" /></div
+        ></a>
+        <div class="middleNav">
+          <ul>
+            <a href="homepage.html"><li class="navlinks">Home</li></a>
+            <a href="chart.html"><li class="navlinks">Top Charts</li></a>
+            <a href="studentDetails.html"><li class="navlinks">Meet our Team</li></a>
+            <a href="product_page.html"><li class="navlinks">Purchase</li></a>
+          </ul>
+        </div>
+        <div style="text-align: right; margin-right: 100px">
+          <a href="Queryform.html"><button class="btn-Nav">Query</button></a>
+          <a href="quiz.html"><button class="btn-Nav">Take Quiz</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Collections -->
+    <div class="selector">
+      <div class="colorOptions">
+        <h3>Background Color</h3>
+        <select id="colorSelect" onchange="changeColor()">
+          <option value="#fdf6ec">Default</option>
+          <option value="rgb(89, 119, 255)">Blue</option>
+          <option value="rgb(89, 255, 97)">Green</option>
+          <option value="rgb(255, 238, 89)">Yellow</option>
+        </select>
+      </div>
+      <div class="colorOptions">
+        <h3>Font Color</h3>
+        <select id="fontSelect" onchange="changeFont()">
+          <option value="black">Default</option>
+          <option value="brown">Brown</option>
+          <option value="white">White</option>
+          <option value="purple">Purple</option>
+        </select>
+      </div>
+    </div>
+
+    <h1 class="collectionHeader">Official Collections</h1>
+
+    <div class="collectionBox">
+      <div class="collection">
+        <img
+          onmouseenter="hoverImg(this)"
+          src="assets/charitha.jfif"
+          alt=""
+          class="charithaC"
+        />
+        <h2>Best of Charitha Attalage</h2>
+      </div>
+      <div class="collection">
+        <img
+          src="assets/olivia.jfif"
+          onmouseenter="hoverImg(this)"
+          alt=""
+          class="oliviaC"
+        />
+        <h2>Latest Tracks of Olivia Rodrigo</h2>
+      </div>
+      <div class="collection">
+        <img
+          src="assets/Best-of-Taylor-Swift.jpg"
+          onmouseenter="hoverImg(this)"
+          alt=""
+          class="taylorC"
+        />
+        <h2>Best of Taylor Swift</h2>
+      </div>
+      <div class="collection">
+        <img
+          src="assets/eminem.jfif"
+          alt=""
+          onmouseenter="hoverImg(this)"
+          class="eminemC"
+        />
+        <h2>Eminem Rap Collection</h2>
+      </div>
+      <div class="collection">
+        <img
+          src="assets/drake.webp"
+          alt=""
+          onmouseenter="hoverImg(this)"
+          class="drakeC"
+        />
+        <h2>Drake Tuninings</h2>
+      </div>
+    </div>
+    <div class="descriptionBox"></div>
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+        <div class="footer-right">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+  
+        <div class="footer-left">
+          <p class="footer-links">
+            <a class="link-1" href="homepage.html">Home</a>
+  
+            <a href="chart.html">Top Charts</a>
+  
+            <a href="studentDetails.html">Meet our Team</a>
+  
+            <a href="product_page.html">Purchase</a>
+  
+            <a href="Queryform.html">Query</a>
+  
+            <a href="quiz.html">Take Quiz</a>
+          </p>
+  
+          <p>OW Beats &copy; 2022</p>
+        </div>
+      </footer>
+
+    <script src="thumbnail.js "></script>
+  </body>
+</html>
